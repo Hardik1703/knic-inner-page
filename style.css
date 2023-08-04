@@ -11,7 +11,7 @@
   --white: #fff;
   --blue: #132229;
   --light: #b2d7cf;
-  --gray: #b4b4b4;
+  --gray: var(--gray);
   --Comfortaa: "Comfortaa", cursive;
   --EB_Garamond: "EB Garamond", serif;
 }
@@ -49,7 +49,8 @@
   background-size: cover;
 }
 
-.hero_img::before {
+.hero_img::before,
+.startup_hero_img::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -108,6 +109,7 @@
   bottom: 0px;
   left: 0px;
   background: url("assets/content_img.svg") bottom no-repeat;
+  background-size: contain;
 }
 
 .second_section {
@@ -453,4 +455,263 @@ footer {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+/* ---------------------------------------------
+Statup Squads css start
+---------------------------------------------- */
+.startup_hero_img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 601px;
+  width: 100%;
+  background-image: url("assets/startup/stratup_hero_img.png");
+  background-size: cover;
+}
+
+.out_sourcing {
+  height: 273px;
+}
+
+.out_sourcing_heading h2 {
+  color: var(--blue);
+  text-align: center;
+  font-family: var(--EB_Garamond);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 4px;
+  position: relative;
+}
+/* ------------------light box-------------------------------- */
+
+.light_box_bg {
+  width: 497px !important;
+  height: 383px !important;
+  position: relative;
+}
+
+.light_box_bg::before {
+  content: "";
+  opacity: 0.37;
+  background-color: var(--light);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.light_box_bg::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 79px;
+  background-color: var(--blue);
+  top: -36px;
+  right: -22px;
+}
+.light_box_content {
+  margin-left: 48px;
+}
+
+.light_box_content h5 {
+  position: relative;
+  color: var(--blue);
+  font-family: var(--EB_Garamond);
+  font-size: 30px;
+  padding: 32px 0px 10px 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 2.4px;
+}
+
+.light_box_content ul li {
+  color: #949595;
+  font-family: var(--Comfortaa);
+  font-size: 16px;
+  margin-bottom: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.light_box_content ul {
+  list-style: none;
+  position: relative;
+}
+.light_box_content ul li::before {
+  content: "•";
+  font-size: 18px;
+  width: 10px !important;
+  height: 10px !important;
+  color: var(--light);
+  margin-left: -1em;
+  display: inline-block;
+}
+
+/* ------------------dark box-------------------------------- */
+.dark_box_bg {
+  width: 497px !important;
+  height: 383px !important;
+  position: relative;
+  background-color: var(--blue);
+}
+
+.dark_box_bg::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 79px;
+  background-color: var(--light);
+  top: -36px;
+  right: -22px;
+}
+.dark_box_content {
+  margin-left: 48px;
+}
+
+.dark_box_content h5 {
+  position: relative;
+  color: var(--white);
+  font-family: var(--EB_Garamond);
+  font-size: 30px;
+  padding: 32px 0px 10px 0px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 2.4px;
+}
+
+.dark_box_content ul li {
+  color: var(--white);
+  font-family: var(--Comfortaa);
+  font-size: 16px;
+  margin-bottom: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.dark_box_content ul {
+  list-style: none;
+  position: relative;
+}
+.dark_box_content ul li::before {
+  content: "•";
+  font-size: 18px;
+  width: 10px !important;
+  height: 10px !important;
+  color: var(--light);
+  margin-left: -1em;
+  display: inline-block;
+}
+.dark_box_btn .dark_box_btn_first,
+.dark_box_btn .dark_box_btn_second {
+  margin-top: 20px;
+}
+
+.dark_box_btn_first a {
+  padding: 12px 68px !important;
+  color: var(--blue);
+  background-color: var(--light);
+  text-align: center;
+  font-family: var(--Comfortaa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.dark_box_btn_second a {
+  color: var(--blue);
+  background-color: var(--light);
+  text-align: center;
+  font-family: var(--Comfortaa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  padding: 12px 27px;
+}
+
+/* ----------Team section-------------- */
+.team_bg {
+  width: 1339px !important;
+  height: 582px;
+  background: rgba(178, 215, 207, 0.31);
+}
+
+.team {
+  padding-top: 52px;
+}
+
+.team_heading {
+  padding: 49px 0px 0px 0px;
+}
+.team_heading h4 {
+  color: var(--blue);
+  text-align: center;
+  font-family: var(--EB_Garamond);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 4px;
+}
+
+.team_img img {
+  border-radius: 50%;
+}
+
+.card_body .card_title {
+  color: var(--blue);
+  font-family: var(--EB_Garamond);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 2.4px;
+}
+
+.card_body .card_text {
+  color: #b4b4b4;
+  text-align: center;
+  font-family: var(--Comfortaa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* ----------Work section-------------- */
+
+.work_heading {
+  padding-top: 88px;
+}
+
+.work_heading h3 {
+  color: var(--blue);
+  text-align: center;
+  font-family: var(--EB_Garamond);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 4px;
+}
+
+.work_heading p {
+  color: var(--light);
+  text-align: center;
+  font-family: var(--EB_Garamond);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 2.8px;
 }
