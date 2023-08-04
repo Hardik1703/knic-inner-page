@@ -11,7 +11,7 @@
   --white: #fff;
   --blue: #132229;
   --light: #b2d7cf;
-  --gray: var(--gray);
+  --gray: #B4B4B4;
   --Comfortaa: "Comfortaa", cursive;
   --EB_Garamond: "EB Garamond", serif;
 }
@@ -411,7 +411,7 @@ footer {
 
 .footer_link h5,
 .footer_social h5 {
-  color: var(--gray);
+  color: var(--light);
   font-family: var(--Comfortaa);
   font-size: 13px;
   font-style: normal;
