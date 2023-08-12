@@ -16,10 +16,10 @@
 
 <body>
     <!-------------------------- Navbar--------------- -->
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid mx-md-3">
-            <a class="navbar-brand" href="index.html"><img src="assets/Logo.png" alt="Logo img"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand" href="index.html"><img src="assets/Logo.png" class="img-fluid" alt="Logo img"></a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="javascript:void(0)">HOME</a>
+                        <a class="nav-link" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mx-lg-4" href="index.html">MARKETPLACE</a>
@@ -53,16 +53,16 @@
 
     <!-------------------------- Second Section--------------- -->
     <div class="container-fluid content_bg">
-        <div class="row">
-            <div class="second_section">
-                <div class="second_section_heading">
+        <div class="row justify-content-center">
+            <div class="second_section col-md-10 col-12 col-lg-6">
+                <div class="second_section_heading px-2 px-md-0">
                     <h2>Own, White-Label or SAAS … <br /><span>you choose!</span></h2>
                 </div>
-                <div class="second_section_info">
-                    <p>These solutions are available as standalone SAAS products you can use <br /> or white-label for
+                <div class="second_section_info mb-md-1 px-3 px-md-5">
+                    <p>These solutions are available as standalone SAAS products you can use or white-label for
                         your group
                         or project.</p>
-                    <p>Or you can license the source code and build upon the base template for <br /> your unique
+                    <p>Or you can license the source code and build upon the base template for your unique
                         project.</p>
                     <p>All apps are build on MERN (Mongo, Express, React, NodeJS) stack.</p>
                     <p>They come with CRM and data provider integrations out of the box.</p>
@@ -74,11 +74,11 @@
     <!-------------------------- Image Section--------------- -->
     <div class="container-fluid">
         <div class="row">
-            <div class="center_image text-center">
+            <div class="center_image text-center px-sm-5">
                 <img src="assets/introduction.png" class="img-fluid" alt="Introduction Image">
                 <div class="youtube">
                     <a href="javascript:void(0)">
-                        <img src="assets/youtube.svg" alt="youtube">
+                        <img src="assets/youtube.svg" class="img-fluid" alt="youtube">
                     </a>
                 </div>
             </div>
@@ -86,11 +86,28 @@
     </div>
 
     <!-------------------------- Card Section--------------- -->
-    <div class="container-fluid card_section d-flex align-items-center justify-content-center">
-        <div class="row ">
-            <div class="col-md-4 col-12">
+    <div class="container-fluid card_section d-flex align-items-center justify-content-center my-md-5 py-md-5 py-5">
+        <div class="row justify-content-center g-4">
+            <div class="col-md-4 col-10">
                 <div class="card rounded-0" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                    <img src="assets/card.png" class="card-img-top img-fluid rounded-0" alt="...">
+                    <img src="assets/card.png" class="card-img-top img-fluid rounded-0" alt="Card One">
+                    <div class="card-body">
+                        <h5 class="card-title">Appraisal</h5>
+                        <a href="javascript:void(0)" class="text-decoration-none">Read More...</a>
+                    </div>
+                    <div class="overlay">
+                        <div class="content_hover_card">
+                            <img src="assets/01.svg" class="img-fluid" alt="01">
+                            <h3>Appraisal</h3>
+                            <p>Capture Testimonials and ratings from your buyers and sellers automatically after the
+                                sale with SMS/Email forms sent directly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10">
+                <div class="card rounded-0" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                    <img src="assets/card.png" class="card-img-top img-fluid rounded-0" alt="Card Two">
                     <div class="card-body">
                         <h5 class="card-title">Appraisal</h5>
                         <a href="javascript:void(0)" class="text-decoration-none">Read More...</a>
@@ -105,26 +122,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-10">
                 <div class="card rounded-0" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                    <img src="assets/card.png" class="card-img-top img-fluid rounded-0" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Appraisal</h5>
-                        <a href="javascript:void(0)" class="text-decoration-none">Read More...</a>
-                    </div>
-                    <div class="overlay">
-                        <div class="content_hover_card">
-                            <img src="assets/01.svg" alt="01">
-                            <h3>Appraisal</h3>
-                            <p>Capture Testimonials and ratings from your buyers and sellers automatically after the
-                                sale with SMS/Email forms sent directly.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <div class="card rounded-0" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
-                    <img src="assets/card.png" class="card-img-top img-fluid rounded-0" alt="...">
+                    <img src="assets/card.png" class="card-img-top img-fluid rounded-0" alt="Card Two">
                     <div class="card-body">
                         <h5 class="card-title">Appraisal</h5>
                         <a href="javascript:void(0)" class="text-decoration-none">Read More...</a>
@@ -143,7 +143,7 @@
         <!-------------------------- Card Modal Section--------------- -->
         <div class="modal fade rounded-0 " id="exampleModalToggle" aria-hidden="true"
             aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content rounded-0 ">
                     <div class="modal-header">
                         <img src="assets/card_popup_modal.png" class="img-fluid w-100" alt="Card popup image">
@@ -169,7 +169,8 @@
                             passages,
                             and more recently with desktop publishing software like Aldus PageMaker including versions
                             of
-                            Lorem Ipsum.</p>
+                            Lorem Ipsum.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -180,99 +181,105 @@
     <div class="container-fluid contact">
         <div class="row">
             <!-- Contact info -->
-            <div class="col-md-6 text-center align-items-center justify-content-center d-flex tree_bottom">
-                <div class="contact_info">
-                    <h3>Ready to plant the seed for growth?</h3>
-                    <p class="mt-4">Contact us below for a chat about how we may help you with your <br /> data or
-                        development needs.
-                    </p>
-                    <h6 class="mt-1">Email us on:</h6>
-                    <div class="contact_email_btn">
-                        <a href="mailto:hello@knicventures.com" class="text-decoration-none">hello@knicventures.com</a>
+            <div class="col-md-12 col-lg-6 tree_bottom">
+                <div class="text-center align-items-center justify-content-center d-flex ">
+                    <div class="contact_info pt-5 pt-lg-0">
+                        <h3>Ready to plant the seed for growth?</h3>
+                        <p class="mt-4">Contact us below for a chat about how we may help you with your data or
+                            development needs.
+                        </p>
+                        <h6 class="mt-1">Email us on:</h6>
+                        <div class="contact_email_btn btn text-white rounded-0 border-none">
+                            <a href="javascript:void(0)"
+                                class="text-decoration-none btn rounded-0 border-none">hello@knicventures.com</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Form -->
-            <div class="col-md-6 form_section d-flex justify-content-center">
-                <form style="width: 583px;">
-                    <!-- Name input -->
-                    <div class="row">
-                        <label class="form-label" for="name">Name</label>
-                        <div class="col-md-6 col-12">
-                            <div class="form-outline">
-                                <input type="text" name="fname" class="form-control" />
+            <div class="col-md-12 col-lg-6 ">
+                <div class="form_section d-flex justify-content-center">
+                    <form>
+                        <!-- Name input -->
+                        <div class="row">
+                            <label class="form-label" for="name">Name</label>
+                            <div class="col-6">
+                                <div class="form-outline">
+                                    <input type="text" name="fname" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-outline">
+                                    <input type="text" name="lname" class="form-control" />
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-12">
-                            <div class="form-outline">
-                                <input type="text" name="lname" class="form-control" />
+
+                        <!-- Business Name input -->
+                        <div class="form-outline mt-3">
+                            <label class="form-label" for="Business_Name">Business Name</label>
+                            <input type="text" name="Business_Name" class="form-control" />
+                        </div>
+
+                        <!-- Email and Mobile input  -->
+                        <div class="row mt-3">
+                            <div class="col-6">
+                                <div class="form-outline">
+                                    <label class="form-label" for="Email">Email</label>
+                                    <input type="email" name="Email" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-outline">
+                                    <label class="form-label" for="number">Mobile Number</label>
+                                    <input type="text" name="number" class="form-control" />
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Business Name input -->
-                    <div class="form-outline mt-3">
-                        <label class="form-label" for="Business_Name">Business Name</label>
-                        <input type="text" name="Business_Name" class="form-control" />
-                    </div>
-
-                    <!-- Email and Mobile input  -->
-                    <div class="row mt-3">
-                        <div class="col-6">
-                            <div class="form-outline">
-                                <label class="form-label" for="Email">Email</label>
-                                <input type="email" name="Email" class="form-control" />
+                        <!-- Checkbox -->
+                        <div class="checkbox_list mt-3">
+                            <h6>Areas of Concern in your Business</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault"> Building new products to support
+                                    my
+                                    customers or team
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="2">
+                                <label class="form-check-label" for="2">
+                                    Help with running our own development or product team
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="3">
+                                <label class="form-check-label" for="3">
+                                    Leveraging data to make better decisions
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="4">
+                                <label class="form-check-label" for="4">
+                                    Save time or money with manual or old processes
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="5">
+                                <label class="form-check-label" for="5">
+                                    Other
+                                </label>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div class="form-outline">
-                                <label class="form-label" for="number">Mobile Number</label>
-                                <input type="text" name="number" class="form-control" />
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Checkbox -->
-                    <div class="checkbox_list mt-3">
-                        <h6>Areas of Concern in your Business</h6>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault"> Building new products to support my
-                                customers or team
-                            </label>
+                        <!-- Project Notes textarea -->
+                        <div class="form-outline mt-3">
+                            <label class="form-label" for="project_notes">Project Notes</label>
+                            <textarea name="project_notes" cols="4" rows="4" class="form-control"></textarea>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="2">
-                            <label class="form-check-label" for="2">
-                                Help with running our own development or product team
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="3">
-                            <label class="form-check-label" for="3">
-                                Leveraging data to make better decisions
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="4">
-                            <label class="form-check-label" for="4">
-                                Save time or money with manual or old processes
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="5">
-                            <label class="form-check-label" for="5">
-                                Other
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- Project Notes textarea -->
-                    <div class="form-outline mt-3">
-                        <label class="form-label" for="project_notes">Project Notes</label>
-                        <textarea name="project_notes" cols="4" rows="4" class="form-control"></textarea>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -280,25 +287,26 @@
     <!-------------------------- Footer Section--------------- -->
     <footer>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row text-center text-md-start">
                 <div class="col-md-3 ms-md-3">
                     <img src="assets/Logo.png" alt="logo">
                 </div>
-                <div class="col-md-3 footer_link">
-                    <h5 class="mb-4">QUICK LINKS</h5>
+                <div class="col-md-3 footer_link mt-5 mt-md-0">
+                    <h5 class="mb-md-4">QUICK LINKS</h5>
                     <ul class="p-0">
                         <li class="mb-2"><a href="javascript:void(0)">HOME</a></li>
-                        <li class="mb-2"><a href="javascript:void(0)">MARKETPLACE</a></li>
-                        <li class="mb-2"><a href="javascript:void(0)">START UP SQUADS</a></li>
+                        <li class="mb-2"><a href="index.html">MARKETPLACE</a></li>
+                        <li class="mb-2"><a href="startupsquads.html">START UP SQUADS</a></li>
                         <li><a href="javascript:void(0)">PRIVACY & CONDITIONS</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 footer_social">
-                    <h5 class="mb-4">FOLLOW US</h5>
-                    <ul class="p-0 d-flex">
+                <div class="col-md-3 footer_social mt-4 mt-md-0">
+                    <h5 class="mb-md-4">FOLLOW US</h5>
+                    <ul class="p-0 d-flex justify-content-center justify-content-md-start">
                         <li><a href="javascript:void(0)"><i class="bi bi-facebook"></i></a></li>
                         <li class="mx-4"><a href="javascript:void(0)"><i class="bi bi-twitter"></i></a></li>
                         <li><a href="javascript:void(0)"><i class="bi bi-instagram"></i></a></li>
+                    </ul>
                 </div>
                 <div class="copyright text-center p-0">
                     <hr>

@@ -37,6 +37,29 @@
   border-bottom: 1px solid var(--light);
 }
 
+@media only screen and (max-width: 991px) {
+  .nav-item a {
+    text-align: center;
+    padding-bottom: 16px;
+  }
+
+  .tree_bottom::after {
+    display: none;
+  }
+
+  .work_icon {
+    margin-left: 55px !important;
+    position: relative;
+  }
+
+  .work_content_heading h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 3px;
+  }
+}
+
 /*------------------ Hero Section------------------------- */
 .hero_img {
   position: relative;
@@ -44,9 +67,10 @@
   justify-content: center;
   align-items: center;
   height: 601px;
-  width: 100%;
+  max-width: 100%;
   background-image: url("assets/hero_img.png");
   background-size: cover;
+  background-position: center;
 }
 
 .hero_img::before,
@@ -89,8 +113,9 @@
 /*------------------ Content Section------------------------- */
 .content_bg {
   position: relative;
-  height: 467px;
+  /* height: 467px; */
 }
+
 .content_bg::before {
   content: "";
   position: absolute;
@@ -101,6 +126,7 @@
   background: var(--light);
   opacity: 0.27;
 }
+
 .content_bg::after {
   content: "";
   position: absolute;
@@ -113,7 +139,7 @@
 }
 
 .second_section {
-  padding: 100px 0px 0px 0px;
+  padding-top: 100px;
   position: relative;
 }
 
@@ -137,10 +163,13 @@
   line-height: 50px;
   letter-spacing: 4px;
 }
+
 .second_section_info {
   padding: 20px;
 }
+
 .second_section_info p {
+  position: relative;
   color: var(--gray);
   text-align: center;
   font-family: var(--Comfortaa);
@@ -152,25 +181,24 @@
 
 /*------------------ Image Section------------------------- */
 .center_image {
-  margin-top: -56px !important;
-  z-index: 999;
+  margin-top: -36px !important;
+  z-index: 1;
   position: relative;
-  width: 815px;
-  height: 536px;
+  /* width: 815px; */
+  /* height: 536px; */
 }
+
+.center_image img {
+  height: 100%;
+}
+
 .center_image .youtube {
   margin-top: -95px;
 }
 
 /*------------------ Card Section------------------------- */
-.card_section {
-  margin-bottom: 163px;
-}
-
 .card {
-  margin-top: 94px;
-  width: 415px !important;
-  height: 411px !important;
+  /* margin-top: 94px; */
   border: none !important;
   box-shadow: 15px 5px 12px 0px rgba(0, 0, 0, 0.25);
   position: absolute;
@@ -265,6 +293,7 @@
 .modal-header {
   border-bottom: 0px !important;
 }
+
 .modal-xl {
   --bs-modal-width: 1091px !important;
 }
@@ -295,8 +324,7 @@
 /*------------------ Contact Section------------------------- */
 .contact {
   background: var(--light);
-  height: 728px;
-  display: flex;
+  /* display: flex; */
   position: relative;
 }
 
@@ -311,7 +339,12 @@
   background-size: contain;
 }
 
+.contact_info {
+  position: relative;
+}
+
 .contact_info h3 {
+  position: relative;
   color: var(--white);
   text-align: center;
   font-family: var(--EB_Garamond);
@@ -321,6 +354,7 @@
   line-height: 56px;
   letter-spacing: 4.64px;
 }
+
 .contact_info p {
   color: var(--white);
   text-align: center;
@@ -330,6 +364,7 @@
   font-weight: 400;
   line-height: 22px;
 }
+
 .contact_info h6 {
   color: var(--white);
   text-align: center;
@@ -339,11 +374,14 @@
   font-weight: 600;
   line-height: 22px !important;
 }
+
 .contact_email_btn {
-  background: var(--blue);
-  margin: 16px 117px !important;
-  padding: 16px 117px !important;
+  background: var(--blue) !important;
+  /* padding: 16px 117px !important; */
+  border: none !important;
+
 }
+
 .contact_email_btn a {
   color: var(--white);
   text-align: center;
@@ -352,10 +390,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+  border: none;
+
 }
 
 .tree_bottom {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .tree_bottom::after {
@@ -370,9 +412,10 @@
 
 /* ----------contact section (form Part)-------------- */
 .form_section {
-  margin-top: 57px !important;
+  margin: 57px 0px 61px 0px !important;
   position: relative;
 }
+
 .form_section label,
 .checkbox_list h6 {
   color: var(--white);
@@ -391,12 +434,14 @@
   font-weight: 400;
   line-height: 22px;
 }
+
 .form-outline input,
 .form-outline textarea,
 .form-check-input {
   box-shadow: none !important;
   border-radius: 0px !important;
 }
+
 .form-check-input {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) !important;
 }
@@ -405,7 +450,6 @@
 
 footer {
   background-color: var(--blue);
-  height: 278px;
   padding-top: 71px;
 }
 
@@ -423,6 +467,7 @@ footer {
 .footer_social ul li {
   list-style: none !important;
 }
+
 .footer_link ul li a {
   text-decoration: none;
   color: var(--white);
@@ -432,6 +477,7 @@ footer {
   font-weight: 500;
   line-height: normal;
 }
+
 .footer_social ul li a i {
   color: #b2d7cf !important;
   font-size: 24px;
@@ -458,7 +504,7 @@ footer {
 }
 
 /* ---------------------------------------------
-Statup Squads css start
+Statup Squads Page css start
 ---------------------------------------------- */
 .startup_hero_img {
   position: relative;
@@ -469,10 +515,11 @@ Statup Squads css start
   width: 100%;
   background-image: url("assets/startup/stratup_hero_img.png");
   background-size: cover;
+  background-position: center;
 }
 
 .out_sourcing {
-  height: 273px;
+  padding: 4rem 0rem;
 }
 
 .out_sourcing_heading h2 {
@@ -486,11 +533,11 @@ Statup Squads css start
   letter-spacing: 4px;
   position: relative;
 }
+
 /* ------------------light box-------------------------------- */
 
 .light_box_bg {
-  width: 497px !important;
-  height: 383px !important;
+  /* height: 383px !important; */
   position: relative;
 }
 
@@ -514,7 +561,9 @@ Statup Squads css start
   top: -36px;
   right: -22px;
 }
-.light_box_content {
+
+.light_box_content,
+.dark_box_content {
   margin-left: 48px;
 }
 
@@ -534,15 +583,17 @@ Statup Squads css start
   color: #949595;
   font-family: var(--Comfortaa);
   font-size: 16px;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
 }
+
 .light_box_content ul {
   list-style: none;
   position: relative;
 }
+
 .light_box_content ul li::before {
   content: "•";
   font-size: 18px;
@@ -555,8 +606,7 @@ Statup Squads css start
 
 /* ------------------dark box-------------------------------- */
 .dark_box_bg {
-  width: 497px !important;
-  height: 383px !important;
+  /* height: 383px !important; */
   position: relative;
   background-color: var(--blue);
 }
@@ -569,9 +619,6 @@ Statup Squads css start
   background-color: var(--light);
   top: -36px;
   right: -22px;
-}
-.dark_box_content {
-  margin-left: 48px;
 }
 
 .dark_box_content h5 {
@@ -590,15 +637,17 @@ Statup Squads css start
   color: var(--white);
   font-family: var(--Comfortaa);
   font-size: 16px;
-  margin-bottom: 26px;
+  padding-bottom: 26px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
 }
+
 .dark_box_content ul {
   list-style: none;
   position: relative;
 }
+
 .dark_box_content ul li::before {
   content: "•";
   font-size: 18px;
@@ -608,6 +657,7 @@ Statup Squads css start
   margin-left: -1em;
   display: inline-block;
 }
+
 .dark_box_btn .dark_box_btn_first,
 .dark_box_btn .dark_box_btn_second {
   margin-top: 20px;
@@ -642,7 +692,7 @@ Statup Squads css start
 /* ----------Team section-------------- */
 .team_bg {
   width: 1339px !important;
-  height: 582px;
+  /* height: 582px; */
   background: rgba(178, 215, 207, 0.31);
 }
 
@@ -653,6 +703,7 @@ Statup Squads css start
 .team_heading {
   padding: 49px 0px 0px 0px;
 }
+
 .team_heading h4 {
   color: var(--blue);
   text-align: center;
@@ -690,9 +741,13 @@ Statup Squads css start
 
 /* ----------Work section-------------- */
 
-.work_heading {
+/* .work_heading {
   padding-top: 88px;
-}
+} */
+/* 
+.work_section {
+  padding-top: 67px;
+} */
 
 .work_heading h3 {
   color: var(--blue);
@@ -714,4 +769,484 @@ Statup Squads css start
   font-weight: 600;
   line-height: 38px;
   letter-spacing: 2.8px;
+}
+
+.work_icon {
+  margin-left: 109px;
+  position: relative;
+}
+
+.work_icon::before {
+  content: "";
+  position: absolute;
+  width: 86px;
+  height: 84px;
+  border-radius: 50.5px;
+  opacity: 0.37;
+  z-index: -1;
+  top: -14px;
+  left: -36px;
+  background: #B2D7CF;
+}
+
+
+.work_content {
+  margin-left: 40px;
+}
+
+.work_content_heading h3 {
+  color: var(--blue);
+  font-family: var(--EB_Garamond);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 4px;
+}
+
+.work_content_heading hr {
+  width: 167px;
+  color: var(--light);
+  margin: 5px 0px 5px 28px !important;
+  border-width: 2px !important;
+}
+
+.work_content_info h5 {
+  color: var(--blue);
+  font-family: var(--EB_Garamond);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 2.8px;
+}
+
+.work_content_info p {
+  color: var(--gray);
+  font-family: var(--Comfortaa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0px !important;
+}
+
+.work_third_section_btn {
+  padding-top: 50px;
+}
+
+
+.work_third_section_btn a {
+  color: var(--blue);
+  text-align: center;
+  font-family: var(--Comfortaa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: var(--light);
+  padding: 10px 55px;
+}
+
+/* ----------Pricing section-------------- */
+
+.pricing_bg {
+  /* width: 1206px !important; */
+  /* height: 582px; */
+  background: rgba(178, 215, 207, 0.31);
+  margin-bottom: 94px;
+}
+
+.pricing_content {
+  /* position: absolute; */
+  margin-top: 87px;
+  margin-left: 99px;
+}
+
+.pricing_heading h2 {
+  color: var(--blue);
+  font-family: var(--EB_Garamond);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 4px;
+}
+
+.pricing_ul h5 {
+  color: var(--blue);
+  font-family: var(--Comfortaa);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.pricing_ul ul {
+  list-style: none;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.pricing_ul ul li {
+  color: #949595;
+  font-family: var(--Comfortaa);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+
+
+.pricing_ul ul li::before {
+  content: "•";
+  font-size: 18px;
+  width: 10px !important;
+  height: 10px !important;
+  color: var(--light);
+  margin-left: -1em;
+  display: inline-block;
+}
+
+.left_square {
+  position: relative;
+}
+
+.left_square::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: var(--blue);
+  top: 25px;
+  left: 35px;
+}
+
+.right_square {
+  position: relative;
+}
+
+.right_square::before {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  background-color: var(--blue);
+  top: 18px;
+  right: 13px;
+}
+
+.right_big_square {
+  position: relative;
+}
+
+.right_big_square::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: var(--blue);
+  top: 45px;
+  right: 62px;
+}
+
+.work_content_right_box {
+  position: absolute;
+  width: 338px;
+  height: 232px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue);
+  right: -158px;
+  top: -443px;
+}
+
+
+.work_content_right_box h5 {
+  color: var(--white);
+  font-family: var(--EB_Garamond);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 4.8px;
+}
+
+.work_content_right_box p {
+  color: var(--white);
+  font-family: var(--Comfortaa);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 1.36px;
+}
+
+/* Responsive Design For Marketplace Page */
+@media only screen and (max-width: 420px) {
+  .content_hover_card {
+    position: absolute;
+    margin: 0px 18px;
+    color: var(--white);
+  }
+
+  .content_hover_card h3 {
+    color: var(--white);
+    font-family: var(--Comfortaa);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 10px 0px 15px 0px;
+  }
+
+  .content_hover_card p {
+    color: var(--white);
+    font-family: var(--Comfortaa);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .form_section label,
+  .checkbox_list h6 {
+    font-size: 15px;
+    font-style: normal;
+    line-height: 22px;
+  }
+
+  .form-check label {
+    font-size: 14px !important;
+  }
+
+  .light_box_bg::after {
+    content: "";
+    position: absolute;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: var(--blue);
+    top: -18px !important;
+    right: -11px !important;
+  }
+
+  .dark_box_bg::after {
+    content: "";
+    position: absolute;
+    width: 50px !important;
+    height: 50px !important;
+    background-color: var(--light);
+    top: -18px !important;
+    right: -11px !important;
+  }
+
+  .card_body .card_text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  /*------------------ Hero Section------------------------- */
+  .hero_content .hero_heading {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 3.8px;
+  }
+
+  .hero_content .hero_title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  /*------------------ Content Section------------------------- */
+  .second_section_heading h2,
+  .second_section_heading span {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 4px;
+  }
+
+  .second_section_info p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  /*------------------ Card Section------------------------- */
+  .card-title {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 2.4px;
+    padding-left: 8px;
+    margin: 0px !important;
+  }
+
+  .card-body a {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .work_content {
+    margin-left: 0px;
+  }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  /*------------------ Second Section------------------------- */
+  .second_section {
+    padding-top: 48px;
+  }
+
+  /*------------------ Image Section------------------------- */
+  .center_image {
+    margin-top: -25px !important;
+  }
+
+  .center_image .youtube {
+    margin-top: -50px;
+  }
+
+  /*------------------ Contact Section------------------------- */
+  .contact_info h3 {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 3.64px;
+  }
+
+  .contact_info p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contact_info h6 {
+    font-size: 18px;
+    line-height: 20px !important;
+  }
+
+  .contact_email_btn a {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .out_sourcing_heading h2 {
+    color: var(--blue);
+    text-align: center;
+    font-family: var(--EB_Garamond);
+    font-size: 36px !important;
+    font-style: normal;
+    font-weight: 600;
+    /* line-height: 48px; */
+    letter-spacing: 3px;
+    position: relative;
+  }
+
+  .work_icon {
+    display: none;
+  }
+
+  .work_heading h3 {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 48px;
+  }
+
+  .work_heading p {
+    font-size: 30px;
+    line-height: 34px;
+  }
+
+  .pricing_content {
+    /* position: absolute; */
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+
+  .pricing_heading h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 3px;
+  }
+
+  .pricing_ul h5 {
+    font-size: 18px;
+  }
+
+  .pricing_ul ul li {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  .team_heading h4 {
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 3px;
+  }
+
+  .card_body .card_title {
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 2.4px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-item a {
+    text-align: center;
+    padding-bottom: 16px;
+  }
+
+  .tree_bottom::after {
+    display: none;
+  }
+
+  .work_icon {
+    margin-left: 55px;
+    position: relative;
+  }
+
+  .work_content_heading h3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 3px;
+  }
+
+  .work_content_info h5 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  .work_content_info p {
+    font-size: 15px;
+  }
+
+  .work_third_section_btn a {
+    display: none;
+  }
 }
